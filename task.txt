@@ -1,0 +1,116 @@
+1)a)function evenOrOdd(num) 
+  if (num % 2 == 0) 
+    return "even";
+  } else {
+    return "odd";
+  }
+}
+b)function titleCase(str) {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  }
+  return str.join(' ');
+}
+document.write(titleCase("TASK"));
+c)    
+    var arr = [4, 8, 7, 13, 12]
+  
+    var sum = 0;
+  
+    
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+  
+    document.write("Sum is " + sum) 
+D)int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
+int sum = 0;
+    for (int i = 0; i < n; i++)
+        if (prime[arr[i]])
+            sum += arr[i];
+ 
+    return sum;
+E)function palindrome(str) {
+
+    var len = str.length;
+    var mid = Math.floor(len/2);
+
+    for ( var i = 0; i < mid; i++ ) {
+        if (str[i] !== str[len - 1 - i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+G)let chars = ['A', 'B', 'A', 'C', 'B'];
+
+let uniqueChars = chars.filter((c, index) => {
+    return chars.indexOf(c) === index;
+});
+
+console.log(uniqueChars);
+F)var ar1 = [1, 12, 15, 26, 38];
+var ar2 = [2, 13, 17, 30, 45];
+var n1 = ar1.length;
+var n2 = ar2.length;
+if (n1 == n2)
+    document.write("Median is "+ getMedian(ar1, ar2, n1));
+else
+    document.write("Doesn't work for arrays of unequal size");
+H)let Array = [1, 2, 3, 4, 5];
+let N = Array.length;
+let K = 2;
+ 
+RightRotate(Array, N, K);
+
+
+3)A)a) evenOrOdd=(num)=>{ 
+  if (num % 2 == 0) {
+    return "even";
+  } else {
+    return "odd";
+  }
+}
+b) titleCase=(str)=> {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  }
+  return str.join(' ');
+}
+document.write(titleCase("TASK"));
+C)c)arr=()=>  
+    var arr = [4, 8, 7, 13, 12]
+  
+    var sum = 0;
+  
+    
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+  
+    document.write("Sum is " + sum)
+D)name=()=>{
+ int arr[] = { 1, 2, 3, 4, 5, 6, 7 };
+int sum = 0;
+    for (int i = 0; i < n; i++)
+        if (prime[arr[i]])
+            sum += arr[i];
+ 
+    return sum;
+}
+E) palindrome=(str)=> {
+
+    var len = str.length;
+    var mid = Math.floor(len/2);
+
+    for ( var i = 0; i < mid; i++ ) {
+        if (str[i] !== str[len - 1 - i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
